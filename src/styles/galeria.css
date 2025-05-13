@@ -1,0 +1,122 @@
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* background-color: rgb(198, 199, 201); */
+  background: linear-gradient(135deg, #a8a8a8, #747474);
+}
+
+header {
+  background: linear-gradient(135deg, #7d7c7c, #2b2b2b);
+  display: flex;
+
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  z-index: 1000;
+}
+header h1 {
+  color: #d4af37;
+  text-shadow: -2px -2px 2px #000000;
+}
+header a {
+  color: #d4af37;
+  list-style: none;
+  text-decoration: none;
+  margin: 1rem;
+  text-shadow: -2px -2px 2px #000000;
+}
+a:hover {
+  color: #efbd1a;
+  transform: scale(1.05);
+  transition: transform 0.2s ease;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header img {
+  margin: 1rem;
+  border-radius: 8px;
+  box-shadow: -2px -2px 2px #000000;
+}
+main {
+  padding: 20vh;
+}
+#card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem; /* espacio entre tarjetas */
+  justify-content: center;
+  padding: 1rem;
+}
+
+.card {
+  flex: 1 1 300px; /* se adapta al espacio, mínimo 300px */
+  max-width: 30vw; /* opcional, puede limitarse para pantallas grandes */
+  border: 1px solid black;
+  background: linear-gradient(135deg, #ef0606, #8f3f3f);
+  /* background-color: black; */
+  color: white;
+  padding: 1rem;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+}
+
+.card img {
+  width: 100%; /* se adapta al ancho de la tarjeta */
+  height: auto;
+  border-radius: 8px;
+}
+footer {
+  background: linear-gradient(135deg, #7d7c7c, #2b2b2b);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: rgb(231, 229, 229);
+}
+footer h3 {
+  padding: 1rem;
+  margin: 1rem;
+}
+.container-footer-redes {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  /* padding: 1rem; */
+
+  border-bottom: 1px solid rgb(170, 168, 168);
+}
+.container-footer-redes svg {
+  margin-bottom: 1rem;
+  border-bottom: 1px solid rgb(128, 126, 126);
+}
+.telefono-mail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.telefono-mail img {
+  width: 40px;
+  margin: 1rem;
+}
+.telefono-mail p {
+  display: inline;
+}
+.copy {
+  border-top: 1px solid rgb(128, 126, 126);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}

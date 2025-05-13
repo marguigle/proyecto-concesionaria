@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background: linear-gradient(135deg, #f5f5f5, #c4c2c2) #f5f5f5;
+  padding: 2rem;
+}
+header {
+  background: linear-gradient(135deg, #7d7c7c, #2b2b2b);
+  display: flex;
+
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  z-index: 1000;
+}
+header h1 {
+  color: #d4af37;
+  text-shadow: -2px -2px 2px #3a3939;
+}
+header a {
+  color: #d4af37;
+  list-style: none;
+  text-decoration: none;
+  margin: 1rem;
+  text-shadow: -2px -2px 2px #3a3939;
+}
+a:hover {
+  color: #efbd1a;
+  transform: scale(1.05);
+  transition: transform 0.2s ease;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header img {
+  margin: 1rem;
+  border-radius: 8px;
+  box-shadow: -2px -2px 2px #3a3939;
+}
+main {
+  margin-top: 20vh;
+}
+main h2 {
+  margin: 1.2rem;
+}
+.contenedor {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+.tarjeta {
+  background: white;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+.tarjeta img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 0.5rem;
+}
+.estrellas {
+  color: gold;
+  margin: 0.3rem 0;
+}
+.tiempo {
+  color: #666;
+  font-size: 0.9rem;
+}
+footer {
+  background: linear-gradient(135deg, #7d7c7c, #2b2b2b);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: rgb(231, 229, 229);
+}
+footer h3 {
+  padding: 1rem;
+  margin: 1rem;
+}
+.container-footer-redes {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  /* padding: 1rem; */
+
+  border-bottom: 1px solid rgb(170, 168, 168);
+}
+.container-footer-redes svg {
+  margin-bottom: 1rem;
+  border-bottom: 1px solid rgb(128, 126, 126);
+}
+.telefono-mail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.telefono-mail img {
+  width: 40px;
+  margin: 1rem;
+}
+.telefono-mail p {
+  display: inline;
+}
+.copy {
+  border-top: 1px solid rgb(128, 126, 126);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
