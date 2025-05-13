@@ -77,19 +77,22 @@
           <img src="../../imagenes/concesionaria4.jpeg" alt="concesionaria-4" />
         </figure>
       </section>
-<section class="mapa">
-  <h3>Como llegar</h3>
-  
-  <iframe 
-  src="https://www.google.com/maps/embed?pb=!1m18...etc"
-  width="800"
-  height="450"
-  style="border:0; border-radius: 8px; margin: 1rem;"
-  allowfullscreen=""
-  loading="lazy"
-  referrerpolicy="no-referrer-when-downgrade">
-</iframe>
-</section>
+
+      <section class="mapa">
+        <h3>Como llegar</h3>
+        <div class="mapa-container">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18...etc"
+            width="800"
+            height="450"
+            style="border: 0; border-radius: 8px; margin: 1rem"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          >
+          </iframe>
+        </div>
+      </section>
     </main>
     <footer>
       <h3>Siganos en nuestras redes sociales..!</h3>
@@ -165,4 +168,25 @@
       </div>
       <div class="copy">Copyright © 2025 Marcelo Guillermo Iglesia</div>
     </footer>
+
+    <script>
+      const mapa = document.querySelector(".mapa-container");
+
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              mapa.classList.add("mapa-visible");
+              observer.unobserve(mapa);
+            }
+          });
+        },
+        {
+          threshold: 0.3,
+        }
+      );
+
+      observer.observe(mapa);
+    </script>
+  </body>
 </html>

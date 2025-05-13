@@ -103,6 +103,19 @@ main {
   align-self: flex-start;
   font-size: 1.2rem;
 }
+.mapa-container {
+  width: 80%;
+  max-width: 800px;
+  opacity: 0;
+  transform: translateX(100px);
+  transition: all 0.8s ease-out;
+}
+
+.mapa-visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
 footer {
   background: linear-gradient(135deg, #7d7c7c, #2b2b2b);
   display: flex;
