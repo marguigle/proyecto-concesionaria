@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
 }
+
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   /* background-image: url("../../imagenes/concesionaria1.jpeg"); */
@@ -11,17 +12,33 @@ body {
   object-fit: cover;
   /* background-color: #cbc3a5; */
 }
+/* inicio de la sección de cabecera */
+
 header {
-  background: linear-gradient(135deg, #7d7c7c, #2b2b2b);
+  /* background: linear-gradient(135deg, #7d7c7c, #2b2b2b);
   display: flex;
   justify-content: space-around;
   align-items: center;
+  grid-template-columns: 1fr 2fe 3fr;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  z-index: 1000; */
+
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  background: linear-gradient(135deg, #7d7c7c, #2b2b2b);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
   position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
   z-index: 1000;
+  gap: 1rem;
 }
 header h1 {
   color: #d4af37;
@@ -49,6 +66,8 @@ header img {
   border-radius: 8px;
   box-shadow: -2px -2px 2px #3a3939;
 }
+/*final de header*/
+
 main {
   height: 100vh;
   display: flex;
@@ -98,7 +117,7 @@ aside {
   padding: 0.2rem;
   box-shadow: -2px -2px 2px #3a3939;
 }
-section {
+.section-tarjeta {
   margin-top: 30vh;
   display: flex;
   justify-content: center;
@@ -107,7 +126,8 @@ section {
 .container-card {
   background-color: rgb(8, 8, 8, 0.6);
   max-width: 70%;
-  display: flex;
+  display: grid;
+  grid-template-columns: auto auto;
   color: white;
   border-radius: 12px;
 }
@@ -116,17 +136,22 @@ section {
   border-radius: 8px;
   margin: 1rem;
 }
+.card-text {
+  display: grid;
+  grid-template-rows: 25% auto;
+}
 .container-card h4 {
-  display: block;
+  /* display: block; */
   text-align: center;
-  padding: 0.5rem;
-  margin: 0.5rem;
+  padding: 1rem;
+  margin: 1rem;
 }
 
 .container-card p {
-  padding: 2.5 rem;
-  margin: 1rem;
+  padding: 2.5 rem 0.2rem;
+  margin: 1.5rem;
 }
+
 footer {
   background: linear-gradient(135deg, #7d7c7c, #2b2b2b);
   display: flex;
@@ -166,4 +191,128 @@ footer h3 {
   width: 100%;
   display: flex;
   justify-content: center;
+}
+
+@media (max-width: 768px) {
+  header {
+    /* grid-template-columns: 1fr;
+    text-align: center;*/
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* header a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    display: none;
+  } */
+
+  header h1 {
+    margin: 0.5rem 0;
+  }
+  header img {
+    margin: 1rem;
+    border-radius: 8px;
+    box-shadow: -2px -2px 2px #3a3939;
+    width: 80px;
+    align-self: center;
+  }
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  nav a {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    margin: 0.2rem;
+  }
+  main {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    background-image: url("../../imagenes/concesionaria1.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+  }
+  aside {
+    /* position: relative; */
+    margin-top: 0.1vh;
+    background-color: #d4af37;
+    width: 100%;
+  }
+  .conteiner-aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .section-tarjeta {
+    /* margin-top: 30vh; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .container-card {
+    position: relative;
+    background-color: rgb(8, 8, 8, 0.6);
+    max-width: 100%;
+    max-height: 100%;
+    color: white;
+    /* border-radius: 12px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5rem;
+    margin-top: 0.1rem;
+  }
+
+  footer {
+    background: linear-gradient(135deg, #7d7c7c, #2b2b2b);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(231, 229, 229);
+    height: 100%;
+  }
+  footer h3 {
+    padding: 1rem;
+    margin: 1rem;
+  }
+  .container-footer-redes {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-bottom: 1px solid rgb(170, 168, 168);
+  }
+  .container-footer-redes svg {
+    margin-bottom: 1rem;
+    border-bottom: 1px solid rgb(128, 126, 126);
+  }
+  .telefono-mail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .telefono-mail img {
+    width: 40px;
+    margin: 1rem;
+  }
+  .telefono-mail p {
+    display: inline;
+  }
+  .copy {
+    border-top: 1px solid rgb(128, 126, 126);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
 }
