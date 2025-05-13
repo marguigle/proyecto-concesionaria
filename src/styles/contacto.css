@@ -112,9 +112,6 @@ footer h3 {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-
-  /* padding: 1rem; */
-
   border-bottom: 1px solid rgb(170, 168, 168);
 }
 .container-footer-redes svg {
