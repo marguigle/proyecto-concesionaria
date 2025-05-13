@@ -124,8 +124,8 @@ section {
 }
 
 .container-card p {
-  padding: 1rem;
-  margin: 1rem 0.2rem;
+  padding: 2.5 rem;
+  margin: 1rem;
 }
 footer {
   background: linear-gradient(135deg, #7d7c7c, #2b2b2b);

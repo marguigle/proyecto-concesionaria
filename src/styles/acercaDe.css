@@ -64,7 +64,11 @@ main {
   flex-direction: column;
   border-radius: 8px;
   align-items: baseline;
-  background: linear-gradient(135deg, white, grey);
+  background: linear-gradient(135deg, white, rgb(46, 55, 227));
+  /* background-image: url("../../imagenes/jeep2.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; */
   width: 70%;
   padding: 2rem;
 }
