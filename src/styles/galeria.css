@@ -48,23 +48,23 @@ header img {
   box-shadow: -2px -2px 2px #000000;
 }
 main {
-  padding: 20vh;
+  margin-top: 20vh;
 }
 #card-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 1.5rem;
+  gap: 1.2rem;
   justify-content: center;
   padding: 1rem;
 }
 
 .card {
   flex: 1 1 300px;
-  max-width: 30vw;
+  max-width: 20vw;
   border: 1px solid black;
   background: linear-gradient(135deg, #ef0606, #8f3f3f);
   color: white;
-  padding: 1rem;
+  padding: 0.1rem;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
   border-radius: 8px;
 }
