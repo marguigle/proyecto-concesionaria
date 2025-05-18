@@ -151,4 +151,12 @@ export const autos = [
     precio: 340000,
     foto: "/imagenes/ROLLS1.jpeg",
   },
+  {
+    id: 20,
+    marca: "Ford",
+    modelo: "Mustang",
+    segmento: "Sedán de lujo",
+    precio: 50.0,
+    foto: "/imagenes/mustang3.jpg",
+  },
 ];

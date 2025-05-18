@@ -9,8 +9,8 @@
   </head>
   <body>
     <header>
-      <img src="../../imagenes/logo1.jpeg" width="60px" alt="logo" />
-      <h1>Autos Premium</h1>
+      <img src="../../imagenes/logo2marron.jpeg" width="60px" alt="logo" />
+      <h1><a href="./index.html">Autos Premium</a></h1>
       <nav>
         <a href="./index.html">Home</a>
         <a href="./acerca-de.html">Acerca de nosotros</a>
@@ -21,14 +21,16 @@
     </header>
     <main>
       <section class="presentacion">
-        <h3>Nuestra Empresa</h3>
-        <p>Somo lideres en lograr la satisfaccion del cliente.</p>
-        <p>
-          Nuestra trayectoria esta avalada por 50 años en la comercializacion de
-          automóviles
-        </p>
-        <p>Contamos con una gran variedad de marcas y modelos.</p>
-        <p>Los esperamos en cualquiera de nuestras sucursales !!!</p>
+        <div class="presentacion-container">
+          <h3>Nuestra Empresa</h3>
+          <p>Somo lideres en lograr la satisfaccion del cliente.</p>
+          <p>
+            Nuestra trayectoria esta avalada por 50 años en la comercializacion
+            de automóviles
+          </p>
+          <p>Contamos con una gran variedad de marcas y modelos.</p>
+          <p>Los esperamos en cualquiera de nuestras sucursales !!!</p>
+        </div>
       </section>
       <section class="sucursales">
         <h3>Nuestras Sucursales</h3>
@@ -188,6 +190,24 @@
       );
 
       observer.observe(mapa);
+
+      const presentacion = document.querySelector(".presentacion");
+
+      const observerp = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              presentacion.classList.add("presentacion-visible");
+              observerp.unobserve(presentacion);
+            }
+          });
+        },
+        {
+          threshold: 0.3,
+        }
+      );
+
+      observerp.observe(presentacion);
     </script>
   </body>
 </html>

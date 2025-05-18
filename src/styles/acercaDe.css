@@ -5,7 +5,7 @@
 }
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  background: linear-gradient(135deg, rgb(153, 138, 114), rgb(162, 162, 162));
+  background: linear-gradient(-90deg, rgb(153, 138, 114), rgb(162, 162, 162));
   justify-content: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -64,26 +64,49 @@ main {
   flex-direction: column;
   border-radius: 8px;
   align-items: baseline;
-  background: linear-gradient(135deg, white, rgb(46, 55, 227));
-  /* background-image: url("../../imagenes/jeep2.jpeg");
+  /* background: linear-gradient(135deg, white, rgb(46, 55, 227)); */
+  background-image: url("../../imagenes/coupe-1374441_1280.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center; */
-  width: 70%;
+  background-position: center;
+
+  width: 80%;
+  height: 100%;
+  object-fit: cover;
+  color: white;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  text-shadow: 2px 2px 2px black;
+  border: 1px solid brown;
+
   padding: 2rem;
+
+  opacity: 0;
+  transform: translateX(600px);
+  transition: all 0.8s ease-out;
 }
+
 .presentacion h3 {
-  margin: 1.5rem;
+  margin: 2rem;
 }
 .presentacion p {
-  padding: 0.3rem;
+  padding: 0.5rem;
 }
+
+/* .presentacion-container {
+  width: 80%;
+  max-width: 800px;
+  opacity: 0;
+  transform: translateX(600px);
+  transition: all 0.8s ease-out;
+} */
+
 .sucursales {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: #bdbcbc;
+  color: #323131;
 }
 .sucursales h3 {
   margin: 4rem 1rem 3rem 1rem;
@@ -115,6 +138,10 @@ main {
 }
 
 .mapa-visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+.presentacion-visible {
   opacity: 1;
   transform: translateX(0);
 }

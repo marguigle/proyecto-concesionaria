@@ -12,5 +12,6 @@ autos.forEach((auto) => {
           <p>${auto.modelo}</p>
           <p>${auto.segmento}</p>
           <p>$ ${auto.precio}</p>
+          <button type="submit" class="button">Ver Detalles</button>
         </div>`);
 });
