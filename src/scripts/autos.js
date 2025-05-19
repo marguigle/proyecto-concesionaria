@@ -133,7 +133,7 @@ export const autos = [
     modelo: "Q5",
     segmento: "SUV",
     precio: 55000,
-    foto: "/imagenes/audi2.jpeg",
+    foto: "/imagenes/audi2.jpg",
   },
   {
     id: 18,
@@ -141,7 +141,7 @@ export const autos = [
     modelo: "X5",
     segmento: "SUV",
     precio: 70000,
-    foto: "/imagenes/bmw2.jpeg",
+    foto: "/imagenes/bmw2.jpg",
   },
   {
     id: 19,
