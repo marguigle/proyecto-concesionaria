@@ -126,9 +126,10 @@ main {
   padding: 1rem;
   margin: 3rem 1rem;
   display: block;
-  align-self: flex-start;
+  align-self: center;
   font-size: 1.2rem;
 }
+
 .mapa-container {
   width: 80%;
   max-width: 800px;
