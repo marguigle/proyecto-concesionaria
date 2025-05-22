@@ -5,7 +5,7 @@ export const autos = [
     modelo: "Corolla",
     segmento: "Sedán",
     precio: 23000,
-    foto: "/imagenes/toyota1.jpeg",
+    foto: "../../imagenes/toyota1.jpeg",
   },
   {
     id: 2,
