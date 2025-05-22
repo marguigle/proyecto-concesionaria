@@ -13,7 +13,7 @@ export const autos = [
     modelo: "Escape",
     segmento: "SUV",
     precio: 31000,
-    foto: "/imagenes/ford1.jpeg",
+    foto: "../../imagenes/ford1.jpeg",
   },
   {
     id: 3,
@@ -21,7 +21,7 @@ export const autos = [
     modelo: "Onix",
     segmento: "Hatchback",
     precio: 18000,
-    foto: "/imagenes/chevrolet1.jpeg",
+    foto: "../../imagenes/chevrolet1.jpeg",
   },
   {
     id: 4,
@@ -29,7 +29,7 @@ export const autos = [
     modelo: "Tiguan",
     segmento: "SUV",
     precio: 34000,
-    foto: "/imagenes/volkswagen1.jpeg",
+    foto: "../../imagenes/volkswagen1.jpeg",
   },
   {
     id: 5,
@@ -37,7 +37,7 @@ export const autos = [
     modelo: "Civic",
     segmento: "Sedán",
     precio: 25000,
-    foto: "/imagenes/honda1.jpeg",
+    foto: "../../imagenes/honda1.jpeg",
   },
   {
     id: 6,
@@ -45,7 +45,7 @@ export const autos = [
     modelo: "208",
     segmento: "Hatchback",
     precio: 20000,
-    foto: "/imagenes/peugeot1.jpeg",
+    foto: "../../imagenes/peugeot1.jpeg",
   },
   {
     id: 7,
@@ -53,7 +53,7 @@ export const autos = [
     modelo: "Duster",
     segmento: "SUV",
     precio: 22000,
-    foto: "/imagenes/renault1.jpeg",
+    foto: "../../imagenes/renault1.jpeg",
   },
   {
     id: 8,
@@ -61,7 +61,7 @@ export const autos = [
     modelo: "Sentra",
     segmento: "Sedán",
     precio: 24000,
-    foto: "/imagenes/nissan1.jpeg",
+    foto: "../../imagenes/nissan1.jpeg",
   },
   {
     id: 9,
@@ -69,7 +69,7 @@ export const autos = [
     modelo: "i20",
     segmento: "Hatchback",
     precio: 19500,
-    foto: "/imagenes/hyundai1.jpeg",
+    foto: "../../imagenes/hyundai1.jpeg",
   },
   {
     id: 10,
@@ -77,7 +77,7 @@ export const autos = [
     modelo: "Sportage",
     segmento: "SUV",
     precio: 32000,
-    foto: "/imagenes/kia1.jpeg",
+    foto: "../../imagenes/kia1.jpeg",
   },
   {
     id: 11,
@@ -85,7 +85,7 @@ export const autos = [
     modelo: "Cronos",
     segmento: "Sedán",
     precio: 18500,
-    foto: "/imagenes/fiat1.jpeg",
+    foto: "../../imagenes/fiat1.jpeg",
   },
   {
     id: 12,
@@ -93,7 +93,7 @@ export const autos = [
     modelo: "Serie 3",
     segmento: "Sedán",
     precio: 45000,
-    foto: "/imagenes/bmw1.jpeg",
+    foto: "../../imagenes/bmw1.jpeg",
   },
   {
     id: 13,
@@ -101,7 +101,7 @@ export const autos = [
     modelo: "GLA",
     segmento: "SUV",
     precio: 48000,
-    foto: "/imagenes/mercedes1.jpeg",
+    foto: "../../imagenes/mercedes1.jpeg",
   },
   {
     id: 14,
@@ -109,7 +109,7 @@ export const autos = [
     modelo: "Renegade",
     segmento: "SUV",
     precio: 29000,
-    foto: "/imagenes/jeep1.jpeg",
+    foto: "../../imagenes/jeep1.jpeg",
   },
   {
     id: 15,
@@ -117,7 +117,7 @@ export const autos = [
     modelo: "3",
     segmento: "Sedán",
     precio: 26000,
-    foto: "/imagenes/mazda1.jpeg",
+    foto: "../../imagenes/mazda1.jpeg",
   },
   {
     id: 16,
@@ -125,7 +125,7 @@ export const autos = [
     modelo: "Clase E",
     segmento: "Sedán",
     precio: 60000,
-    foto: "/imagenes/mercedes2.jpeg",
+    foto: "../../imagenes/mercedes2.jpeg",
   },
   {
     id: 17,
@@ -133,7 +133,7 @@ export const autos = [
     modelo: "Q5",
     segmento: "SUV",
     precio: 55000,
-    foto: "/imagenes/audi2.jpg",
+    foto: "../../imagenes/audi2.jpg",
   },
   {
     id: 18,
@@ -141,7 +141,7 @@ export const autos = [
     modelo: "X5",
     segmento: "SUV",
     precio: 70000,
-    foto: "/imagenes/bmw2.jpg",
+    foto: "../../imagenes/bmw2.jpg",
   },
   {
     id: 19,
@@ -149,7 +149,7 @@ export const autos = [
     modelo: "Ghost",
     segmento: "Sedán de lujo",
     precio: 340000,
-    foto: "/imagenes/ROLLS1.jpeg",
+    foto: "../../imagenes/ROLLS1.jpeg",
   },
   {
     id: 20,
@@ -157,6 +157,6 @@ export const autos = [
     modelo: "Mustang",
     segmento: "Sedán de lujo",
     precio: 50.0,
-    foto: "/imagenes/mustang3.jpg",
+    foto: "../../imagenes/mustang3.jpg",
   },
 ];
