@@ -98,6 +98,14 @@ aside {
   border-radius: 5px;
   box-shadow: -2px -2px 2px #3a3939;
 }
+input {
+  margin-bottom: 1rem;
+  padding: 0.3rem;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: -2px -2px 2px #3a3939;
+}
 .conteiner-aside label {
   margin-bottom: 0.2rem;
 }
