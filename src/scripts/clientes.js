@@ -34,3 +34,9 @@ clientes.forEach((cliente) => {
 
   contenedor.appendChild(tarjeta);
 });
+const iconoHamburguesa = document.querySelector(".icono-hamburguesa");
+const mainLink = document.querySelector(".main-links");
+iconoHamburguesa.addEventListener("click", () => {
+  console.log("click");
+  mainLink.classList.toggle("oculto");
+});

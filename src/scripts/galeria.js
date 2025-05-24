@@ -16,4 +16,10 @@ document.addEventListener("DOMContentLoaded", () => {
         <button type="submit" class="button">Ver Detalles</button>
       </div>`;
   });
+  const iconoHamburguesa = document.querySelector(".icono-hamburguesa");
+  const mainLink = document.querySelector(".main-links");
+  iconoHamburguesa.addEventListener("click", () => {
+    console.log("click");
+    mainLink.classList.toggle("oculto");
+  });
 });
