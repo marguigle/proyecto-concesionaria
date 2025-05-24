@@ -42,11 +42,19 @@ a:hover {
   transform: scale(1.05);
   transition: transform 0.2s ease;
 }
-nav {
+.main-links {
+  display: none;
+}
+
+.nav-links {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
+/* .nav-links.oculto {
+  display: none;
+} */
 header img {
   margin: 1rem;
   border-radius: 8px;
@@ -194,8 +202,6 @@ footer h3 {
 }
 @media (max-width: 768px) {
   header {
-    /* grid-template-columns: 1fr;
-    text-align: center;*/
     position: relative;
     display: flex;
     flex-direction: column;
@@ -219,30 +225,54 @@ footer h3 {
     width: 80px;
     align-self: center;
   }
-  nav {
+  .nav-links {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: start;
   }
-  nav a {
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
-    margin: 0.2rem;
+  .oculto {
     display: none;
   }
+
   .icono-hamburguesa {
     display: block;
     align-self: flex-start;
   }
-  nav.mostrar-links {
-    display: block;
+  .main-links {
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-bottom: 2rem;
   }
+  .main-links a {
+    background-color: #d4af37;
+    color: #2b2b2b;
+    list-style: none;
+    text-decoration: none;
+    width: 100%;
+    padding: 0.3rem;
+    border: 1px solid black;
+    border-bottom: 1px solid black;
+    margin: 0.2rem;
+    align-self: flex-start;
+    border-radius: 5px;
+    /* display: none; */
+  }
+  .main-links.oculto {
+    display: none;
+  }
+
   main {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
   }
+  /* .nav-links.oculto {
+    display: none;
+  } */
   .presentacion {
     display: flex;
     flex-direction: column;
@@ -251,29 +281,11 @@ footer h3 {
     background: linear-gradient(135deg, white, rgb(46, 55, 227));
     width: 95%;
     padding: 2rem;
-  }
-  /* .presentacion {
-    display: flex;
-    flex-direction: column;
-    border-radius: 8px;
-    align-items: baseline;
-    background-image: url("../../imagenes/coupe-1374441_1280.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    width: 80%;
-    height: 100%;
-    object-fit: cover;
-    color: white;
-    font-size: 1.5rem;
-    padding: 0.5rem;
-    text-shadow: 2px 2px 2px black;
-    border: 1px solid brown;
-    padding: 2rem;
-    opacity: 0;
+    opacity: 1;
     transform: translateX(0px);
     transition: all 0.8s ease-out;
-  } */
+  }
+
   .sucursales {
     width: 100%;
     display: flex;

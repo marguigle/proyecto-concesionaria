@@ -1,11 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
-
 body {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: outfit, Verdana, Geneva, Tahoma, sans-serif;
   /* background-image: url("../../imagenes/concesionaria1.jpeg"); */
   justify-content: center;
   background-repeat: no-repeat;
@@ -56,7 +56,12 @@ header img {
 .icono-hamburguesa {
   display: none;
 }
-
+/* .aside-links {
+  display: none;
+}
+.mostrar-links {
+  display: block;
+} */
 main {
   height: 100%;
   display: flex;
@@ -87,9 +92,9 @@ aside {
   margin: 2rem;
   justify-content: space-between;
 }
-.conteiner-aside a {
+/* .conteiner-aside a {
   display: inline-block;
-}
+} */
 .conteiner-aside select {
   margin-bottom: 1rem;
   padding: 0.3rem;
@@ -109,16 +114,23 @@ input {
 .conteiner-aside label {
   margin-bottom: 0.2rem;
 }
-.conteiner-aside a {
-  color: black;
+.aside-links {
+  display: flex;
+  flex-direction: column;
+}
+.aside-links a {
   list-style: none;
+  width: 100%;
   text-decoration: none;
+  color: black;
+  margin-bottom: 0.3rem;
   border: 1px solid black;
   border-radius: 3px;
-  text-align: center;
-  margin-bottom: 0.7rem;
-  padding: 0.2rem;
+  padding: 0.3rem;
   box-shadow: -2px -2px 2px #3a3939;
+  background-color: #d5ceb8;
+}
+.aside-links.oculto {
   display: none;
 }
 .btn {
@@ -250,6 +262,7 @@ footer h3 {
     display: block;
     cursor: pointer;
   }
+
   main {
     height: 100%;
     display: flex;
@@ -267,14 +280,26 @@ footer h3 {
     background-color: #d4af37;
     width: 100%;
   }
+  /* aside {
+    margin: 19vh 0 0.5rem 0;
+    background-color: #d4af37;
+
+    min-width: 20vw;
+
+    max-height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  } */
+
   .conteiner-aside {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
   }
-  .conteiner-aside.mostrar-links a {
+  /* .conteiner-aside.mostrar-links a {
     display: inline;
-  }
+  } */
   .section-tarjeta {
     /* margin-top: 30vh; */
     display: flex;

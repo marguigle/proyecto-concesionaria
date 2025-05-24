@@ -11,16 +11,23 @@
     <header>
       <img src="../../imagenes/logo2marron.jpeg" width="60px" alt="logo" />
       <h1><a href="../../index.html">Autos Premium</a></h1>
-      <nav>
+      <img src="../../imagenes/icons8-menú-50.png" class="icono-hamburguesa" />
+      <nav class="nav-links oculto">
         <a href="../../index.html">Home</a>
         <a href="./acerca-de.html">Acerca de nosotros</a>
         <a href="./galeria.html">Galeria</a>
         <a href="./clientes.html">Nuestros clientes</a>
         <a href="../pages/contacto.html">Contacto</a>
       </nav>
-      <img src="../../imagenes/icons8-menú-50.png" class="icono-hamburguesa" />
     </header>
     <main>
+      <div class="main-links oculto">
+        <a href="../../index.html">Home</a>
+        <a href="./acerca-de.html">Acerca de nosotros</a>
+        <a href="./galeria.html">Galeria</a>
+        <a href="./clientes.html">Nuestros clientes</a>
+        <a href="../pages/contacto.html">Contacto</a>
+      </div>
       <section class="presentacion">
         <div class="presentacion-container">
           <h3>Nuestra Empresa</h3>
@@ -172,9 +179,8 @@
       <div class="copy">Copyright © 2025 Marcelo Guillermo Iglesia</div>
     </footer>
 
-    <script>
+    <!-- <script>
       const mapa = document.querySelector(".mapa-container");
-
       const observer = new IntersectionObserver(
         (entries) => {
           entries.forEach((entry) => {
@@ -208,6 +214,7 @@
       );
 
       observerp.observe(presentacion);
-    </script>
+    </script> -->
+    <script src="../scripts/acercaDe.js"></script>
   </body>
 </html>
