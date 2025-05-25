@@ -26,6 +26,9 @@ header h1 {
   color: #d4af37;
   text-shadow: -2px -2px 2px #000000;
 }
+header img.logo {
+  width: 50px;
+}
 header a {
   color: #d4af37;
   list-style: none;
@@ -144,31 +147,53 @@ footer h3 {
   display: flex;
   justify-content: center;
 }
+/* media nuevos */
 @media (max-width: 768px) {
-  .card {
-    max-width: 100vw;
+  header {
+    background: linear-gradient(135deg, #7d7c7c, #2b2b2b);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+    position: fixed;
     flex-wrap: wrap;
-    border: 1px solid black;
-    background: linear-gradient(135deg, #d4af37, #dbcb6f);
-    color: white;
-    padding: 0.05rem;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-    border-radius: 8px;
-    text-shadow: #000000 2px 2px 2px;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index: 1000;
+  }
+  header img {
+    width: 35px;
   }
   header img.icono-hamburguesa {
     display: block;
+    cursor: pointer;
+    width: 35px;
   }
-  .nav-links {
+  header h1 {
+    /* margin: 0.5rem 0; */
+    font-size: 1em;
+  }
+  header img {
+    /* margin: 0.5rem; */
+    border-radius: 8px;
+    box-shadow: -2px -2px 2px #3a3939;
+    width: 50px;
+    align-self: center;
+  }
+  /* .nav-links {
     display: none;
   }
   .oculto {
     display: none;
-  }
+  } */
 
   .icono-hamburguesa {
     display: block;
     align-self: flex-start;
+  }
+  .nav-links {
+    display: none;
   }
   .main-links {
     margin-top: 0;
@@ -198,4 +223,215 @@ footer h3 {
   .main-links.oculto {
     display: none;
   }
+}
+
+@media (max-width: 320px) {
+  header {
+    /* position: relative; */
+    display: flex;
+    justify-content: center;
+    max-width: 321px;
+    padding: 1rem 0.3rem;
+  }
+
+  header h1 {
+    /* margin: 0.5rem 0; */
+    font-size: 0.5rem;
+    padding: 0;
+    margin: 0;
+
+    /* margin-left: 0.5rem; */
+  }
+  header img.logo {
+    /* margin: 0.5rem; */
+    border-radius: 8px;
+    box-shadow: -2px -2px 2px #3a3939;
+    width: 35px;
+    margin: 0;
+    /* align-self: center; */
+  }
+
+  .icono-hamburguesa {
+    display: block;
+    cursor: pointer;
+    width: 35px;
+    margin: 0;
+  }
+
+  footer {
+    background: linear-gradient(135deg, #7d7c7c, #2b2b2b);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(231, 229, 229);
+    height: 100%;
+  }
+  footer h3 {
+    padding: 1rem;
+    margin: 1rem;
+  }
+  .container-footer-redes {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-bottom: 1px solid rgb(170, 168, 168);
+  }
+  .container-footer-redes svg {
+    margin-bottom: 1rem;
+    border-bottom: 1px solid rgb(128, 126, 126);
+  }
+  .telefono-mail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .telefono-mail img {
+    width: 25px;
+    margin: 0.5rem;
+  }
+  .telefono-mail p {
+    display: inline;
+    font-size: 0.9rem;
+  }
+  .copy {
+    border-top: 1px solid rgb(128, 126, 126);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}
+@media (max-width: 376px) {
+  header {
+    display: flex;
+    justify-content: center;
+    max-width: 375px;
+  }
+
+  header h1 {
+    font-size: 1em;
+  }
+  header img.logo {
+    border-radius: 8px;
+    box-shadow: -2px -2px 2px #3a3939;
+    width: 35px;
+  }
+
+  .icono-hamburguesa {
+    display: block;
+    cursor: pointer;
+    width: 35px;
+  }
+
+  footer {
+    background: linear-gradient(135deg, #7d7c7c, #2b2b2b);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(231, 229, 229);
+    height: 100%;
+  }
+  footer h3 {
+    padding: 1rem;
+    margin: 1rem;
+  }
+  .container-footer-redes {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-bottom: 1px solid rgb(170, 168, 168);
+  }
+  .container-footer-redes svg {
+    margin-bottom: 1rem;
+    border-bottom: 1px solid rgb(128, 126, 126);
+  }
+  .telefono-mail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .telefono-mail img {
+    width: 25px;
+    margin: 0.5rem;
+  }
+  .telefono-mail p {
+    display: inline;
+  }
+  .copy {
+    border-top: 1px solid rgb(128, 126, 126);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}
+@media (max-width: 769px) {
+  header {
+    /* position: relative; */
+    display: flex;
+    justify-content: space-between;
+    max-width: 769px;
+  }
+
+  header h1 {
+    /* margin: 0.5rem 0; */
+    font-size: 1.5em;
+  }
+  header img {
+    /* margin: 0.5rem; */
+    border-radius: 8px;
+    box-shadow: -2px -2px 2px #3a3939;
+    width: 60px;
+    align-self: center;
+  }
+
+  .icono-hamburguesa {
+    display: block;
+    cursor: pointer;
+    width: 40px;
+  }
+
+  footer {
+    background: linear-gradient(135deg, #7d7c7c, #2b2b2b);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(231, 229, 229);
+    height: 100%;
+  }
+  footer h3 {
+    padding: 1rem;
+    margin: 1rem;
+  }
+  .container-footer-redes {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-bottom: 1px solid rgb(170, 168, 168);
+  }
+  .container-footer-redes svg {
+    margin-bottom: 1rem;
+    border-bottom: 1px solid rgb(128, 126, 126);
+  }
+  .telefono-mail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .telefono-mail img {
+    width: 25px;
+    margin: 0.5rem;
+  }
+  .telefono-mail p {
+    display: inline;
+  }
+  .copy {
+    border-top: 1px solid rgb(128, 126, 126);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}
+@media (max-width: 1025px) {
 }

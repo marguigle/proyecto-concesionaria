@@ -118,18 +118,7 @@ input {
   display: flex;
   flex-direction: column;
 }
-/* .aside-links a {
-  list-style: none;
-  width: 100%;
-  text-decoration: none;
-  color: black;
-  margin-bottom: 0.3rem;
-  border: 1px solid black;
-  border-radius: 3px;
-  padding: 0.3rem;
-  box-shadow: -2px -2px 2px #3a3939;
-  background-color: #d5ceb8;
-} */
+
 .aside-links.oculto {
   display: none;
 }
