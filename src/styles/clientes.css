@@ -180,3 +180,74 @@ footer h3 {
     display: none;
   }
 }
+
+@media (max-width: 376px) {
+  header {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+  header h1 {
+    font-size: 1.2rem;
+    padding: 0;
+    margin: 0;
+  }
+  header img.logo {
+    border-radius: 8px;
+    box-shadow: -2px -2px 2px #3a3939;
+    width: 35px;
+    margin: 0;
+  }
+  header img.icono-hamburguesa {
+    width: 35px;
+    margin: 16px;
+  }
+  .tarjeta {
+    background: white;
+    border-radius: 12px;
+    padding: 1rem;
+    /* box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); */
+    text-align: center;
+  }
+  footer {
+    background: linear-gradient(135deg, #7d7c7c, #2b2b2b);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(231, 229, 229);
+    height: 100%;
+  }
+  footer h3 {
+    padding: 1rem;
+    margin: 1rem;
+  }
+  .container-footer-redes {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-bottom: 1px solid rgb(170, 168, 168);
+  }
+  .container-footer-redes svg {
+    margin-bottom: 1rem;
+    border-bottom: 1px solid rgb(128, 126, 126);
+  }
+  .telefono-mail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .telefono-mail img {
+    width: 25px;
+    margin: 0.5rem;
+  }
+  .telefono-mail p {
+    display: inline;
+  }
+  .copy {
+    border-top: 1px solid rgb(128, 126, 126);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}

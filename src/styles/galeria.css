@@ -162,7 +162,7 @@ footer h3 {
     width: 100vw;
     z-index: 1000;
   }
-  header img {
+  header img.logo {
     width: 35px;
   }
   header img.icono-hamburguesa {
@@ -227,35 +227,29 @@ footer h3 {
 
 @media (max-width: 320px) {
   header {
-    /* position: relative; */
     display: flex;
     justify-content: center;
     max-width: 321px;
     padding: 1rem 0.3rem;
   }
 
-  header h1 {
-    /* margin: 0.5rem 0; */
-    font-size: 0.5rem;
+  header > a > h1 {
+    font-size: 1rem;
     padding: 0;
     margin: 0;
-
-    /* margin-left: 0.5rem; */
   }
   header img.logo {
-    /* margin: 0.5rem; */
     border-radius: 8px;
     box-shadow: -2px -2px 2px #3a3939;
     width: 35px;
     margin: 0;
-    /* align-self: center; */
   }
 
   .icono-hamburguesa {
-    display: block;
     cursor: pointer;
-    width: 35px;
     margin: 0;
+    /* padding-top: 2rem; */
+    width: 40px;
   }
 
   footer {
