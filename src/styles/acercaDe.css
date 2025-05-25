@@ -206,6 +206,7 @@ footer h3 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
   }
 
   /* header a {
@@ -364,5 +365,83 @@ footer h3 {
     width: 100%;
     display: flex;
     justify-content: center;
+  }
+}
+@media (max-width: 376px) {
+  .main {
+    width: 100%;
+  }
+  header {
+    /* position: relative; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    max-width: 100%;
+    padding: 1rem 0.2rem;
+  }
+
+  header h1 {
+    margin: 0;
+    font-size: 1rem;
+  }
+  header img {
+    margin: 0;
+    border-radius: 8px;
+    box-shadow: -2px -2px 2px #3a3939;
+    width: 35px;
+    align-self: center;
+  }
+
+  .icono-hamburguesa {
+    display: block;
+    cursor: pointer;
+    width: 35px;
+    margin: 0;
+  }
+
+  footer {
+    background: linear-gradient(135deg, #7d7c7c, #2b2b2b);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(231, 229, 229);
+    height: 100%;
+  }
+  footer h3 {
+    padding: 1rem;
+    margin: 1rem;
+  }
+  .container-footer-redes {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-bottom: 1px solid rgb(170, 168, 168);
+  }
+  .container-footer-redes svg {
+    margin-bottom: 1rem;
+    border-bottom: 1px solid rgb(128, 126, 126);
+  }
+  .telefono-mail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .telefono-mail img {
+    width: 25px;
+    margin: 0.5rem;
+  }
+  .telefono-mail p {
+    display: inline;
+    font-size: 0.6rem;
+  }
+  .copy {
+    border-top: 1px solid rgb(128, 126, 126);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .copy p {
+    font-size: 0.7rem;
   }
 }

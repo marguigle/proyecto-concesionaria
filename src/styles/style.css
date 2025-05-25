@@ -343,7 +343,9 @@ footer h3 {
     /* position: relative; */
     display: flex;
     justify-content: center;
-    max-width: 320px;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
   }
 
   header h1 {
@@ -464,6 +466,9 @@ footer h3 {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  .telefono-mail p {
+    font-size: 0.6rem;
   }
   .telefono-mail img {
     width: 25px;

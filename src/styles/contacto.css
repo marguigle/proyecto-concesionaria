@@ -12,9 +12,10 @@ header {
   align-items: center;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
   position: fixed;
+  flex-wrap: wrap;
   top: 0;
   left: 0;
-  width: 100vw;
+  width: 100%;
   z-index: 1000;
 }
 header h1 {
@@ -33,7 +34,7 @@ a:hover {
   transform: scale(1.05);
   transition: transform 0.2s ease;
 }
-nav {
+nav.nav-links {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -52,7 +53,12 @@ main {
   background-position: center;
   height: 100%;
 }
-
+.main-links {
+  display: none;
+}
+.icono-hamburguesa {
+  display: none;
+}
 form {
   background-color: rgb(8, 8, 8, 0.6);
   display: flex;
@@ -140,4 +146,12 @@ footer h3 {
   width: 100%;
   display: flex;
   justify-content: center;
+}
+@media (max-width: 768px) {
+  nav.nav-links {
+    display: none;
+  }
+  .icono-hamburguesa {
+    display: block;
+  }
 }
