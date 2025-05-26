@@ -148,29 +148,34 @@ footer h3 {
   justify-content: center;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 321px) {
   header {
-    /* position: relative; */
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     max-width: 100%;
     margin: 0;
     padding: 0;
+    height: 15vh;
   }
 
   header h1 {
-    /* margin: 0.5rem 0; */
-    font-size: 1.5em;
+    margin: 0.5rem 0rem;
+    padding: 0.1rem;
+    font-size: 0.6rem;
+    margin: 0;
   }
   header img.logo {
-    /* margin: 0.5rem; */
-    border-radius: 8px;
-    box-shadow: -2px -2px 2px #3a3939;
-    width: 40px;
-    align-self: center;
+    margin: 0.5rem 0rem;
+    padding: 0.1rem;
+    /* border-radius: 8px; */
+
+    width: 35px;
+    /* align-self: center; */
   }
 
   .icono-hamburguesa {
+    margin: 0.5rem 0rem;
+    padding: 0.1rem;
     display: block;
     cursor: pointer;
     width: 35px;
@@ -208,6 +213,31 @@ footer h3 {
   }
   .oculto {
     display: none;
+  }
+  form input {
+    margin: 1rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+  }
+  form textarea {
+    align-self: center;
+    border-radius: 5px;
+    width: 90%;
+  }
+  form button {
+    background-color: #efbd1a;
+    padding: 0.2rem;
+    margin: 0.4rem 0 0.2rem 0;
+    font-size: 1rem;
+    width: 60%;
+    align-self: center;
+    border-radius: 5px;
+  }
+  form button:hover {
+    transform: scale(1.05);
+    transition: transform 0.2s ease;
+    background-color: #e0ad07;
+    color: #7d7c7c;
   }
   footer {
     background: linear-gradient(135deg, #7d7c7c, #2b2b2b);
@@ -252,6 +282,37 @@ footer h3 {
     width: 100%;
     display: flex;
     justify-content: center;
+  }
+  @media (max-width: 376px) {
+    header {
+      display: flex;
+      justify-content: center;
+      max-width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    header h1 {
+      /* margin: 0.5rem 0; */
+      font-size: 1em;
+    }
+    header img.logo {
+      margin: 0;
+      border-radius: 8px;
+      box-shadow: -2px -2px 2px #3a3939;
+      width: 35px;
+      align-self: center;
+    }
+
+    .icono-hamburguesa {
+      display: block;
+      cursor: pointer;
+      width: 35px;
+    }
+
+    nav.nav-links {
+      display: none;
+    }
   }
 }
 @media (max-width: 376px) {
@@ -421,34 +482,29 @@ footer h3 {
     }
   }
 }
-@media (max-width: 321px) {
+@media (max-width: 768px) {
   header {
+    /* position: relative; */
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     max-width: 100%;
     margin: 0;
     padding: 0;
-    height: 15vh;
   }
 
   header h1 {
-    margin: 0.5rem 0rem;
-    padding: 0.1rem;
-    font-size: 0.6rem;
-    margin: 0;
+    /* margin: 0.5rem 0; */
+    font-size: 1.5em;
   }
   header img.logo {
-    margin: 0.5rem 0rem;
-    padding: 0.1rem;
-    /* border-radius: 8px; */
-
-    width: 35px;
-    /* align-self: center; */
+    /* margin: 0.5rem; */
+    border-radius: 8px;
+    box-shadow: -2px -2px 2px #3a3939;
+    width: 40px;
+    align-self: center;
   }
 
   .icono-hamburguesa {
-    margin: 0.5rem 0rem;
-    padding: 0.1rem;
     display: block;
     cursor: pointer;
     width: 35px;
@@ -487,6 +543,7 @@ footer h3 {
   .oculto {
     display: none;
   }
+
   form input {
     margin: 1rem;
     padding: 0.5rem;
@@ -555,36 +612,5 @@ footer h3 {
     width: 100%;
     display: flex;
     justify-content: center;
-  }
-  @media (max-width: 376px) {
-    header {
-      display: flex;
-      justify-content: center;
-      max-width: 100%;
-      margin: 0;
-      padding: 0;
-    }
-
-    header h1 {
-      /* margin: 0.5rem 0; */
-      font-size: 1em;
-    }
-    header img.logo {
-      margin: 0;
-      border-radius: 8px;
-      box-shadow: -2px -2px 2px #3a3939;
-      width: 35px;
-      align-self: center;
-    }
-
-    .icono-hamburguesa {
-      display: block;
-      cursor: pointer;
-      width: 35px;
-    }
-
-    nav.nav-links {
-      display: none;
-    }
   }
 }
