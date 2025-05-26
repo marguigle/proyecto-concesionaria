@@ -315,7 +315,7 @@ footer h3 {
     }
   }
 }
-@media (max-width: 376px) {
+@media (max-width: 390px) {
   header {
     display: flex;
     justify-content: space-around;
