@@ -21,7 +21,7 @@ header {
 }
 header h1 {
   color: #d4af37;
-  text-shadow: -2px -2px 2px #3a3939;
+  /* text-shadow: -2px -2px 2px #3a3939; */
 }
 header a {
   color: #d4af37;
@@ -52,7 +52,7 @@ header img {
   display: none;
 }
 main {
-  margin-top: 10vh;
+  margin-top: 5vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
