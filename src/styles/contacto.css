@@ -342,6 +342,17 @@ footer h3 {
   .oculto {
     display: none;
   }
+  form {
+    background-color: rgb(8, 8, 8, 0.6);
+    display: flex;
+    min-width: 90%;
+    border-radius: 8px;
+    flex-direction: column;
+    padding: 2rem;
+    margin-top: 20vh;
+    justify-content: center;
+    margin-bottom: 5rem;
+  }
   form input {
     margin: 1rem;
     padding: 0.5rem;
@@ -441,6 +452,12 @@ footer h3 {
     nav.nav-links {
       display: none;
     }
+    main {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-top: 14vh;
+    }
   }
 }
 
@@ -487,7 +504,9 @@ footer h3 {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-top: 10vh;
   }
+
   .main-links {
     margin-top: 5.5vh;
     margin-left: 0;
