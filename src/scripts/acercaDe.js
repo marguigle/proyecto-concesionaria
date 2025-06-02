@@ -38,7 +38,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const navLinks = document.querySelector(".main-links");
 
   iconoHamburguesa.addEventListener("click", () => {
-    console.log("click");
     navLinks.classList.toggle("oculto");
   });
 });
