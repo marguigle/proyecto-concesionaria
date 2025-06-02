@@ -226,6 +226,13 @@ footer h3 {
     align-self: flex-start;
     width: 40px;
   }
+  main {
+    padding-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
   .main-links {
     margin-top: 0;
     display: flex;
