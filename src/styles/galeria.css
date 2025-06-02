@@ -6,7 +6,8 @@
 }
 
 body {
-  background: linear-gradient(135deg, #a8a8a8, #747474);
+  /* background: linear-gradient(135deg, #a8a8a8, #747474); */
+  background: linear-gradient(135deg, black, rgb(34, 34, 34));
 }
 
 header {
@@ -41,7 +42,7 @@ a:hover {
   transform: scale(1.05);
   transition: transform 0.2s ease;
 }
-header img.icono-hamburguesa {
+header svg.icono-hamburguesa {
   display: none;
 }
 .main-links {
@@ -78,7 +79,7 @@ main {
   max-width: 300px;
   flex-wrap: wrap;
   border: 1px solid black;
-  background: linear-gradient(135deg, #d4af37, #dbcb6f);
+  background: linear-gradient(135deg, #ead694, #252524);
   color: white;
   padding: 0.1rem;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
@@ -229,8 +230,8 @@ footer h3 {
   header {
     display: flex;
     justify-content: center;
-    max-width: 321px;
-    padding: 1rem 0.3rem;
+    max-width: 100%;
+    padding: 1rem 0.1rem;
   }
 
   header > a > h1 {
@@ -245,11 +246,12 @@ footer h3 {
     margin: 0;
   }
 
-  .icono-hamburguesa {
+  header svg.icono-hamburguesa {
+    display: block;
     cursor: pointer;
     margin: 0;
     /* padding-top: 2rem; */
-    width: 40px;
+    /* width: 40px; */
   }
 
   footer {
@@ -311,10 +313,11 @@ footer h3 {
     width: 35px;
   }
 
-  .icono-hamburguesa {
-    display: block;
+  header svg.icono-hamburguesa {
+    display: flex;
+    align-self: center;
     cursor: pointer;
-    width: 35px;
+    /* width: 35px; */
   }
 
   footer {
@@ -359,12 +362,12 @@ footer h3 {
     justify-content: center;
   }
 }
-@media (max-width: 769px) {
+@media (max-width: 768px) {
   header {
     /* position: relative; */
     display: flex;
     justify-content: space-between;
-    max-width: 769px;
+    max-width: 768px;
   }
 
   header h1 {
@@ -379,10 +382,12 @@ footer h3 {
     align-self: center;
   }
 
-  .icono-hamburguesa {
+  header svg.icono-hamburguesa {
     display: block;
     cursor: pointer;
-    width: 40px;
+    align-self: center;
+
+    /* width: 40px; */
   }
 
   footer {

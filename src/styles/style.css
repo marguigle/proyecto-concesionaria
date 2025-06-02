@@ -14,18 +14,17 @@ body {
 }
 
 header {
-  display: grid;
-  grid-template-columns: auto 1fr auto;
-  align-items: center;
-  padding: 0.5rem 1rem;
   background: linear-gradient(135deg, #7d7c7c, #2b2b2b);
+  display: flex;
+
+  justify-content: space-around;
+  align-items: center;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
   position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
   z-index: 1000;
-  gap: 1rem;
 }
 header h1 {
   color: #d4af37;
@@ -43,15 +42,18 @@ a:hover {
   transform: scale(1.05);
   transition: transform 0.2s ease;
 }
-nav {
+
+.nav-links {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 header img {
   margin: 1rem;
   border-radius: 8px;
   box-shadow: -2px -2px 2px #3a3939;
+  max-width: 50px;
 }
 .icono-hamburguesa {
   display: none;
@@ -75,9 +77,9 @@ main {
 
 aside {
   position: relative;
-  margin: 19vh 0 0.5rem 0;
-  background-color: #d4af37;
-
+  margin: 10vh 0 0.5rem 0;
+  background-color: rgb(8, 8, 8, 0.6);
+  color: white;
   min-width: 30vw;
 
   max-height: 100%;
@@ -91,6 +93,9 @@ aside {
   flex-direction: column;
   margin: 2rem;
   justify-content: space-between;
+}
+.aside-links.oculto a {
+  display: none;
 }
 /* .conteiner-aside a {
   display: inline-block;
@@ -113,10 +118,6 @@ input {
 }
 .conteiner-aside label {
   margin-bottom: 0.2rem;
-}
-.aside-links {
-  display: flex;
-  flex-direction: column;
 }
 
 .aside-links.oculto {
@@ -209,433 +210,43 @@ footer h3 {
   justify-content: center;
 }
 
+@media (max-width: 1025px) {
+  .conteiner-aside select {
+    margin-bottom: 1rem;
+    padding: 0.3rem;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: -2px -2px 2px #3a3939;
+  }
+  input {
+    margin-bottom: 1rem;
+    padding: 0.3rem;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: -2px -2px 2px #3a3939;
+    max-width: 100%;
+  }
+  .conteiner-aside label {
+    margin-bottom: 0.2rem;
+  }
+}
 @media (max-width: 768px) {
   header {
-    position: relative;
     display: flex;
     justify-content: space-between;
+    max-width: 768px;
   }
-
-  header h1 {
-    margin: 0.5rem 0;
-  }
-  header img {
-    margin: 1rem;
-    border-radius: 8px;
-    box-shadow: -2px -2px 2px #3a3939;
-    width: 80px;
-    align-self: center;
-  }
-  nav {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  nav a {
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
-    margin: 0.2rem;
+  header nav {
     display: none;
   }
-  .icono-hamburguesa {
-    display: block;
-    cursor: pointer;
-  }
-
-  main {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    background-image: url("../../imagenes/concesionaria1.jpeg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    align-items: center;
-  }
-  aside {
-    margin-top: 0.1vh;
-    background-color: #d4af37;
-    width: 100%;
-  }
-
-  .conteiner-aside {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-  .aside-links {
-    list-style: none;
-    text-decoration: none;
-    width: 90vw;
-    padding: 0.3rem;
-    background-color: #dbcb6f;
-    box-shadow: 0px 3px 3px rgb(105, 105, 105);
-    padding: 0.4 rem 0.2rem;
-    margin: 1 rem;
-    align-self: center;
-    border-radius: 3px;
-  }
-
-  .section-tarjeta {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .container-card {
-    position: relative;
-    background-color: rgb(8, 8, 8, 0.6);
-    max-width: 100%;
-    max-height: 100%;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 5rem;
-    margin-top: 0.1rem;
-  }
-
-  footer {
-    background: linear-gradient(135deg, #7d7c7c, #2b2b2b);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: rgb(231, 229, 229);
-    height: 100%;
-  }
-  footer h3 {
-    padding: 1rem;
-    margin: 1rem;
-  }
-  .container-footer-redes {
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    border-bottom: 1px solid rgb(170, 168, 168);
-  }
-  .container-footer-redes svg {
-    margin-bottom: 1rem;
-    border-bottom: 1px solid rgb(128, 126, 126);
-  }
-  .telefono-mail {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .telefono-mail img {
-    width: 40px;
-    margin: 1rem;
-  }
-  .telefono-mail p {
-    display: inline;
-  }
-  .copy {
-    border-top: 1px solid rgb(128, 126, 126);
-    width: 100%;
-    display: flex;
-    justify-content: center;
-  }
-}
-@media (max-width: 320px) {
-  header {
-    /* position: relative; */
-    display: flex;
-    justify-content: center;
-    max-width: 100%;
-    margin: 0;
-    padding: 0;
-  }
 
   header h1 {
     /* margin: 0.5rem 0; */
-    font-size: 1.5em;
-  }
-  header img {
-    /* margin: 0.5rem; */
-    border-radius: 8px;
-    box-shadow: -2px -2px 2px #3a3939;
-    width: 50px;
-    align-self: center;
-  }
+    font-size: 1.5rem;
 
-  .icono-hamburguesa {
-    display: block;
-    cursor: pointer;
-    width: 35px;
-  }
-
-  main {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-
-    background-image: url("../../imagenes/concesionaria1.jpeg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    align-items: center;
-  }
-  aside {
-    /* position: relative; */
-    margin-top: 0.1vh;
-    background-color: #d4af37;
-    width: 100%;
-  }
-
-  .conteiner-aside {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-  .aside-links {
-    /* list-style: none;
-    text-decoration: none; */
-    width: 90vw;
-    padding: 0.3rem;
-    /* border: 1px solid black; */
-    background-color: #dbcb6f;
-
-    box-shadow: 0px 3px 3px rgb(105, 105, 105);
-    padding: 0.4 rem 0.2rem;
-    margin: 1 rem;
-    align-self: center;
-    border-radius: 3px;
-  }
-  .aside-links a {
-    list-style: none;
-    width: 100%;
-    text-decoration: none;
-    color: black;
-    margin-bottom: 0.3rem;
-    /* border: 1px solid black; */
-    border-radius: 3px;
-    padding: 0.3rem;
-    box-shadow: -2px -2px 2px #3a3939;
-    /* background-color: #d5ceb8; */
-  }
-  .section-tarjeta {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    max-width: 320px;
-  }
-  .container-card {
-    position: relative;
-    background-color: rgb(8, 8, 8, 0.6);
-    max-width: 100%;
-    max-height: 100%;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 5rem;
-    margin-top: 0.1rem;
-  }
-  .card-image img {
-    max-width: 315px;
-    margin: 0;
-  }
-  footer {
-    background: linear-gradient(135deg, #7d7c7c, #2b2b2b);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: rgb(231, 229, 229);
-    height: 100%;
-  }
-  footer h3 {
-    padding: 1rem;
-    margin: 1rem;
-  }
-  .container-footer-redes {
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    border-bottom: 1px solid rgb(170, 168, 168);
-  }
-  .container-footer-redes svg {
-    margin-bottom: 1rem;
-    border-bottom: 1px solid rgb(128, 126, 126);
-  }
-  .telefono-mail {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .telefono-mail p {
-    font-size: 0.6rem;
-  }
-  .telefono-mail img {
-    width: 25px;
-    margin: 0.5rem;
-  }
-  .telefono-mail p {
-    display: inline;
-  }
-  .copy {
-    border-top: 1px solid rgb(128, 126, 126);
-    width: 100%;
-    display: flex;
-    justify-content: center;
-  }
-}
-@media (max-width: 376px) {
-  header {
-    /* position: relative; */
-    display: flex;
-    justify-content: center;
-    max-width: 375px;
-  }
-
-  header h1 {
-    /* margin: 0.5rem 0; */
-    font-size: 1.5em;
-  }
-  header img {
-    /* margin: 0.5rem; */
-    border-radius: 8px;
-    box-shadow: -2px -2px 2px #3a3939;
-    width: 50px;
-    align-self: center;
-  }
-
-  .icono-hamburguesa {
-    display: block;
-    cursor: pointer;
-    width: 35px;
-  }
-
-  main {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-
-    background-image: url("../../imagenes/concesionaria1.jpeg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    align-items: center;
-  }
-  aside {
-    /* position: relative; */
-    margin-top: 0.1vh;
-    background-color: #d4af37;
-    width: 100%;
-  }
-
-  .conteiner-aside {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-  .aside-links {
-    /* list-style: none;
-    text-decoration: none; */
-    width: 90vw;
-    padding: 0.3rem;
-    /* border: 1px solid black; */
-    background-color: #dbcb6f;
-
-    box-shadow: 0px 3px 3px rgb(105, 105, 105);
-    padding: 0.4 rem 0.2rem;
-    margin: 1 rem;
-    align-self: center;
-    border-radius: 3px;
-  }
-  .aside-links a {
-    list-style: none;
-    width: 100%;
-    text-decoration: none;
-    color: black;
-    margin-bottom: 0.3rem;
-    /* border: 1px solid black; */
-    border-radius: 3px;
-    padding: 0.3rem;
-    box-shadow: -2px -2px 2px #3a3939;
-    /* background-color: #d5ceb8; */
-  }
-  .section-tarjeta {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    max-width: 320px;
-  }
-  .container-card {
-    position: relative;
-    background-color: rgb(8, 8, 8, 0.6);
-    max-width: 100%;
-    max-height: 100%;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 5rem;
-    margin-top: 0.1rem;
-  }
-  .card-image img {
-    max-width: 315px;
-    margin: 0;
-  }
-  footer {
-    background: linear-gradient(135deg, #7d7c7c, #2b2b2b);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: rgb(231, 229, 229);
-    height: 100%;
-  }
-  footer h3 {
-    padding: 1rem;
-    margin: 1rem;
-  }
-  .container-footer-redes {
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    border-bottom: 1px solid rgb(170, 168, 168);
-  }
-  .container-footer-redes svg {
-    margin-bottom: 1rem;
-    border-bottom: 1px solid rgb(128, 126, 126);
-  }
-  .telefono-mail {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .telefono-mail img {
-    width: 25px;
-    margin: 0.5rem;
-  }
-  .telefono-mail p {
-    display: inline;
-  }
-  .copy {
-    border-top: 1px solid rgb(128, 126, 126);
-    width: 100%;
-    display: flex;
-    justify-content: center;
-  }
-}
-@media (max-width: 769px) {
-  header {
-    /* position: relative; */
-    display: flex;
-    justify-content: space-between;
-    max-width: 769px;
-  }
-
-  header h1 {
-    /* margin: 0.5rem 0; */
-    font-size: 1.5em;
+    margin: 0.5rem 0;
   }
   header img {
     /* margin: 0.5rem; */
@@ -662,43 +273,66 @@ footer h3 {
     background-position: center;
     align-items: center;
   }
+
   aside {
-    /* position: relative; */
-    margin-top: 0.1vh;
-    background-color: #d4af37;
     width: 100%;
+    align-items: center;
   }
 
   .conteiner-aside {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
   }
-  .aside-links {
-    /* list-style: none;
-    text-decoration: none; */
-    width: 90vw;
-    padding: 0.3rem;
-    /* border: 1px solid black; */
-    background-color: #dbcb6f;
+  div.aside-links {
+    display: flex;
+    flex-direction: column;
+    transition: transform 10s;
+    width: 30vw;
 
-    box-shadow: 0px 3px 3px rgb(105, 105, 105);
-    padding: 0.4 rem 0.2rem;
+    padding: 0.4 rem 0.1rem;
     margin: 1 rem;
-    align-self: center;
+    align-self: flex-end;
+    list-style: none;
+    text-decoration: none;
+    width: 50vw;
+    padding: 0.3rem;
+    padding: 0 rem 0.2rem;
+    margin: 1 rem;
+    align-self: flex-end;
     border-radius: 3px;
   }
+
   .aside-links a {
     list-style: none;
     width: 100%;
     text-decoration: none;
-    color: black;
+    color: white;
     margin-bottom: 0.3rem;
-    /* border: 1px solid black; */
-    border-radius: 3px;
+
     padding: 0.3rem;
-    box-shadow: -2px -2px 2px #3a3939;
-    /* background-color: #d5ceb8; */
+    border-bottom: 0.5px solid white;
+    text-align: start;
+    cursor: pointer;
+  }
+  .aside-links a:hover {
+    color: #d5ceb8;
+    font-size: 1.2rem;
+  }
+  .label {
+    margin-top: 2rem;
+  }
+  aside label {
+    color: white;
+  }
+  .btn {
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  .btn:hover {
+    background-color: #f6c523;
+    color: white;
+    font-size: 1.2rem;
   }
   .section-tarjeta {
     display: flex;
@@ -767,26 +401,252 @@ footer h3 {
     display: flex;
     justify-content: center;
   }
-}
-@media (max-width: 1025px) {
-  .conteiner-aside select {
-    margin-bottom: 1rem;
-    padding: 0.3rem;
-    font-size: 16px;
-    border: none;
-    border-radius: 5px;
-    box-shadow: -2px -2px 2px #3a3939;
-  }
-  input {
-    margin-bottom: 1rem;
-    padding: 0.3rem;
-    font-size: 16px;
-    border: none;
-    border-radius: 5px;
-    box-shadow: -2px -2px 2px #3a3939;
+
+  /* .container-card {
+    position: relative;
+    background-color: rgb(8, 8, 8, 0.6);
     max-width: 100%;
+    max-height: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5rem;
+    margin-top: 0.1rem;
+  } */
+}
+@media (max-width: 376px) {
+  header {
+    display: flex;
+    justify-content: center;
+    max-width: 375px;
   }
-  .conteiner-aside label {
-    margin-bottom: 0.2rem;
+
+  header h1 {
+    /* margin: 0.5rem 0; */
+    font-size: 1.5em;
+  }
+  header img {
+    /* margin: 0.5rem; */
+    border-radius: 8px;
+    box-shadow: -2px -2px 2px #3a3939;
+    width: 50px;
+    align-self: center;
+  }
+
+  .icono-hamburguesa {
+    display: block;
+    cursor: pointer;
+    width: 35px;
+  }
+
+  main {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    background-image: url("../../imagenes/concesionaria1.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+  }
+
+  .conteiner-aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .aside-links {
+    width: 50vw;
+    padding: 0.4 rem 0.2rem;
+    margin: 1 rem;
+    align-self: center;
+  }
+  .aside-links a {
+    list-style: none;
+    width: 100%;
+    text-decoration: none;
+    color: white;
+    margin-bottom: 0.3rem;
+    padding: 0.3rem;
+  }
+  .section-tarjeta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 320px;
+  }
+  .container-card {
+    position: relative;
+    background-color: rgb(8, 8, 8, 0.6);
+    max-width: 100%;
+    max-height: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5rem;
+    margin-top: 0.1rem;
+  }
+  .card-image img {
+    max-width: 315px;
+    margin: 0;
+  }
+  footer {
+    background: linear-gradient(135deg, #7d7c7c, #2b2b2b);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(231, 229, 229);
+    height: 100%;
+  }
+  footer h3 {
+    padding: 1rem;
+    margin: 1rem;
+  }
+  .container-footer-redes {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-bottom: 1px solid rgb(170, 168, 168);
+  }
+  .container-footer-redes svg {
+    margin-bottom: 1rem;
+    border-bottom: 1px solid rgb(128, 126, 126);
+  }
+  .telefono-mail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .telefono-mail img {
+    width: 25px;
+    margin: 0.5rem;
+  }
+  .telefono-mail p {
+    display: inline;
+  }
+  .copy {
+    border-top: 1px solid rgb(128, 126, 126);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}
+@media (max-width: 320px) {
+  header {
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  header h1 {
+    font-size: 1.5em;
+  }
+  header img {
+    border-radius: 8px;
+    box-shadow: -2px -2px 2px #3a3939;
+    width: 50px;
+    align-self: center;
+  }
+
+  .icono-hamburguesa {
+    display: block;
+    cursor: pointer;
+    width: 35px;
+  }
+
+  main {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    background-image: url("../../imagenes/concesionaria1.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+  }
+
+  .conteiner-aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .section-tarjeta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 320px;
+  }
+  .container-card {
+    position: relative;
+    background-color: rgb(8, 8, 8, 0.6);
+    max-width: 100%;
+    max-height: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5rem;
+    margin-top: 0.1rem;
+  }
+  .card-image img {
+    max-width: 315px;
+    margin: 0;
+  }
+  footer {
+    background: linear-gradient(135deg, #7d7c7c, #2b2b2b);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(231, 229, 229);
+    height: 100%;
+  }
+  footer h3 {
+    padding: 1rem;
+    margin: 1rem;
+  }
+  .container-footer-redes {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-bottom: 1px solid rgb(170, 168, 168);
+  }
+  .container-footer-redes svg {
+    margin-bottom: 1rem;
+    border-bottom: 1px solid rgb(128, 126, 126);
+  }
+  .telefono-mail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .telefono-mail p {
+    font-size: 0.6rem;
+  }
+  .telefono-mail img {
+    width: 25px;
+    margin: 0.5rem;
+  }
+  .telefono-mail p {
+    display: inline;
+  }
+  .copy {
+    border-top: 1px solid rgb(128, 126, 126);
+    width: 100%;
+    display: flex;
+    justify-content: center;
   }
 }

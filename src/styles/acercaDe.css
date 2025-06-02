@@ -59,6 +59,7 @@ header img {
   margin: 1rem;
   border-radius: 8px;
   box-shadow: -2px -2px 2px #3a3939;
+  max-width: 50px;
 }
 .icono-hamburguesa {
   display: none;

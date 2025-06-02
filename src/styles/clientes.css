@@ -36,6 +36,12 @@ a:hover {
   transform: scale(1.05);
   transition: transform 0.2s ease;
 }
+/* header img.logo {
+  margin: 1rem;
+  border-radius: 8px;
+  box-shadow: -2px -2px 2px #3a3939;
+  max-width: 50px;
+} */
 header img.icono-hamburguesa {
   display: none;
 }
@@ -54,10 +60,11 @@ nav {
   justify-content: space-between;
   align-items: center;
 }
-header img {
+header img.logo {
   margin: 1rem;
   border-radius: 8px;
   box-shadow: -2px -2px 2px #3a3939;
+  max-width: 50px;
 }
 main {
   margin-top: 20vh;

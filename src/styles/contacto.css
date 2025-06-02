@@ -6,16 +6,17 @@
 }
 
 header {
-  background: linear-gradient(135deg, #7d7c7c, #2b2b2b);
+  /* background: linear-gradient(135deg, #7d7c7c, #2b2b2b); */
+  background: linear-gradient(135deg, rgb(0, 0, 0), #2b2b2b);
+
   display: flex;
   justify-content: space-around;
   align-items: center;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
   position: fixed;
-  flex-wrap: wrap;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 100vw;
   z-index: 1000;
 }
 header h1 {
@@ -34,28 +35,35 @@ a:hover {
   transform: scale(1.05);
   transition: transform 0.2s ease;
 }
-nav.nav-links {
+
+.nav-links {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 header img {
   margin: 1rem;
   border-radius: 8px;
+  box-shadow: -2px -2px 2px #3a3939;
+  max-width: 50px;
+}
+.icono-hamburguesa {
+  display: none;
 }
 main {
   margin-top: 10vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   background-image: url("../../imagenes/ferrari1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   height: 100%;
 }
-.main-links {
-  display: none;
-}
+
 .icono-hamburguesa {
   display: none;
 }
@@ -83,11 +91,7 @@ form textarea {
   border-radius: 8px;
   width: 80%;
 }
-footer {
-  width: 100%;
-  background-color: #7d7c7c;
-  color: white;
-}
+
 form label {
   color: white;
   text-align: center;
@@ -107,6 +111,9 @@ form button:hover {
   transition: transform 0.2s ease;
   background-color: #e0ad07;
 }
+
+/* ------FOOTER------- */
+
 footer {
   background: linear-gradient(135deg, #7d7c7c, #2b2b2b);
   display: flex;
