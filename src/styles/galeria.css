@@ -112,6 +112,7 @@ main {
   color: white;
   transform: scale(0.2rem);
 }
+
 footer {
   background: linear-gradient(135deg, #7d7c7c, #2b2b2b);
   display: flex;
