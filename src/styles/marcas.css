@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: outfit, Verdana, Geneva, Tahoma, sans-serif;
+  /* background-image: url("../../imagenes/concesionaria1.jpeg"); */
+  justify-content: center;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  /* background-color: #cbc3a5; */
+}
+
+header {
+  background: linear-gradient(135deg, #7d7c7c, #2b2b2b);
+  display: flex;
+
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  z-index: 1000;
+}
+header h1 {
+  color: #d4af37;
+  text-shadow: -2px -2px 2px #3a3939;
+}
+header a {
+  color: #d4af37;
+  list-style: none;
+  text-decoration: none;
+  margin: 1rem;
+  text-shadow: -2px -2px 2px #3a3939;
+}
+a:hover {
+  color: #efbd1a;
+  transform: scale(1.05);
+  transition: transform 0.2s ease;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+header img {
+  margin: 1rem;
+  border-radius: 8px;
+  box-shadow: -2px -2px 2px #3a3939;
+  max-width: 50px;
+}
+.icono-hamburguesa {
+  display: none;
+}
+
+body {
+  background: linear-gradient(to left, rgb(173, 172, 172), rgb(227, 227, 227));
+}
+.seccion-marcas {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20vh;
+}
+.form-marcas {
+  /* background: linear-gradient(deg90, black, grey); */
+  background: linear-gradient(to right, rgb(173, 172, 172), rgb(227, 227, 227));
+
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 5px;
+  width: 60vw;
+  border: none;
+  padding: 2rem;
+}
+input {
+  font-size: 1.3rem;
+  border-radius: 5px;
+  padding: 0.3rem;
+  width: 60%;
+}
+button {
+  font-size: 1.2rem;
+  padding: 0.3rem;
+  line-height: 1.5rem;
+  background-color: rgb(164, 164, 250);
+  border: none;
+  width: 30%;
+  align-self: center;
+}
+button:hover {
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+.seccion-card {
+  margin-top: 5vh;
+}
+
+.card {
+  width: 100vw;
+  margin-left: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.card > p {
+  border: 1px solid black;
+  padding: 1.5rem;
+  background-color: #efbd1a;
+}
