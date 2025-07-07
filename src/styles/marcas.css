@@ -204,6 +204,9 @@ footer h3 {
 }
 /* media nuevos */
 @media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
   header {
     background: linear-gradient(135deg, #7d7c7c, #2b2b2b);
     display: flex;
@@ -254,7 +257,7 @@ footer h3 {
   }
   .main-links a {
     /* background-color: #d4af37; */
-    color: white;
+    color: rgb(57, 44, 44);
     list-style: none;
     text-decoration: none;
     width: 90%;
