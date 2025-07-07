@@ -20,6 +20,7 @@ body {
   overflow-x: hidden;
   /* background-color: #cbc3a5; */
 }
+/* ---------inicio header------- */
 
 header {
   background: linear-gradient(135deg, #7d7c7c, #2b2b2b);
@@ -67,6 +68,7 @@ header img {
   display: none;
 }
 
+/* --------fin header------ */
 body {
   background: linear-gradient(to left, rgb(173, 172, 172), rgb(227, 227, 227));
 }
@@ -243,7 +245,7 @@ footer h3 {
     display: none;
   }
   .main-links {
-    margin-top: 0;
+    margin-top: 15vh;
     display: flex;
     flex-direction: column;
     align-items: flex-start;

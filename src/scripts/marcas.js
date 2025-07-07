@@ -16,7 +16,12 @@ const traerDatos = async (marca) => {
     console.log(error);
   }
 };
-
+const iconoHamburguesa = document.querySelector(".icono-hamburguesa");
+const mainLink = document.querySelector(".main-links");
+iconoHamburguesa.addEventListener("click", () => {
+  console.log("click");
+  mainLink.classList.toggle("oculto");
+});
 const mostrarAutos = async (e) => {
   e.preventDefault();
   const marca = inputMarca.value.trim().toLowerCase();
@@ -73,7 +78,7 @@ const renderizarAutoSeleccionado = (auto) => {
   const div = document.createElement("div");
   div.classList.add("auto-seleccionado");
   div.innerHTML = `
-    <p><strong>${auto.make}</strong> - Modelo: ${auto.model}</p>
+    <p><strong>${auto.make}</strong> -  ${auto.model}</p>
   `;
   seccion.appendChild(div);
 };

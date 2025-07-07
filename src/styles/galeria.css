@@ -9,6 +9,7 @@ body {
   /* background: linear-gradient(135deg, #a8a8a8, #747474); */
   background: linear-gradient(135deg, black, rgb(34, 34, 34));
 }
+/* ----------inicio header----- */
 
 header {
   background: linear-gradient(135deg, #7d7c7c, #2b2b2b);
@@ -45,6 +46,8 @@ a:hover {
 header svg.icono-hamburguesa {
   display: none;
 }
+
+/* fin header */
 .main-links {
   display: none;
 }
