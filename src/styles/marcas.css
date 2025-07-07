@@ -122,13 +122,37 @@ button:hover {
   flex-wrap: wrap;
   gap: 1rem;
 }
-.card > p {
+/* .card > p {
+
+  padding: 1.5rem;
+  margin: 0.5rem;
+  background-color: #efbd1a;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+} */
+.card-modelos {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
   /* border: 1px solid black; */
   padding: 1.5rem;
   margin: 0.5rem;
   background-color: #efbd1a;
   border-radius: 50%;
   transition: transform 0.3s ease;
+}
+.card-modelos button {
+  background-color: rgb(55, 153, 239);
+  width: auto;
+  font-size: 0.8rem;
+  margin-top: 0.3rem;
+}
+.card-modelos button:hover {
+  background-color: rgb(146, 197, 242);
+  width: auto;
+  font-size: 0.8rem;
+  margin-top: 0.3rem;
+  color: black;
 }
 .card > p:hover {
   transform: scale(1.1);

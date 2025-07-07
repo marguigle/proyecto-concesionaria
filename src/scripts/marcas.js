@@ -26,12 +26,54 @@ const mostrarAutos = async (e) => {
     const autos = await traerDatos(marca);
     autos.forEach((auto) => {
       document.getElementById("card").innerHTML += `
-   <p> <strong>${auto.Make_Name}</strong> <br/>
-   modelo : ${auto.Model_Name} </p>
-    `;
+        <div class="card-modelos">
+          <p><strong>${auto.Make_Name}</strong><br/>
+          Modelo: ${auto.Model_Name}</p>
+          <button class="boton-agregar" 
+                  data-make="${auto.Make_Name}" 
+                  data-model="${auto.Model_Name}">
+                  Agregar
+          </button>
+        </div>
+      `;
     });
   } catch (error) {
     console.log("Error al mostrar autos:", error);
   }
 };
+
 boton.addEventListener("click", mostrarAutos);
+
+// Delegación de eventos:
+card.addEventListener("click", (e) => {
+  if (e.target.classList.contains("boton-agregar")) {
+    const make = e.target.dataset.make;
+    const model = e.target.dataset.model;
+    guardarLocalmente(make, model);
+  }
+});
+const guardarLocalmente = (make, model) => {
+  const auto = { make, model };
+
+  // Recuperar los autos actuales en localStorage
+  const autosGuardados = JSON.parse(localStorage.getItem("autos")) || [];
+
+  // Agregar el nuevo auto
+  autosGuardados.push(auto);
+
+  // Guardar de nuevo
+  localStorage.setItem("autos", JSON.stringify(autosGuardados));
+
+  // Renderizar en la sección de autos seleccionados
+  renderizarAutoSeleccionado(auto);
+};
+
+const renderizarAutoSeleccionado = (auto) => {
+  const seccion = document.getElementById("autos-seleccionados");
+  const div = document.createElement("div");
+  div.classList.add("auto-seleccionado");
+  div.innerHTML = `
+    <p><strong>${auto.make}</strong> - Modelo: ${auto.model}</p>
+  `;
+  seccion.appendChild(div);
+};
